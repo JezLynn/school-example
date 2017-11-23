@@ -1,0 +1,43 @@
+.index{
+  .banner{
+    background: url('../img/banner_index.jpeg') no-repeat;
+    background-size: cover;
+  }
+
+  .topnav{
+    .active{
+      background-color: $index-primary;
+    }
+  }
+
+  .container{
+    background-color: $index-primary;
+
+    h1{
+      text-align: center;
+    }
+
+    .grid-container{
+      text-align: center;
+
+      .first, .second, .third, .fourth{
+        background-color: $index-primary-ligth;
+
+        .circle{
+          margin: 0 auto;
+          height: 100px;
+          width: 100px;
+          background-color: $text-light;
+          border-radius: 50%;
+          border: 3px solid $index-primary;
+          box-shadow: 0 0 0px 2px $text-light;
+          color: $index-primary;
+
+          i{
+            vertical-align: sub;
+          }
+        }
+      }
+    }
+  }
+}

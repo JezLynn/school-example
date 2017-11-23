@@ -1,0 +1,27 @@
+.contact{
+  .banner{
+    background: url('../img/banner_contact.jpeg') no-repeat;
+    background-size: cover;
+  }
+
+  .topnav{
+    .active{
+      background-color: $contact-primary;
+    }
+  }
+
+  .container{
+    background-color: $contact-primary;
+
+    .first, .second, .third, .fourth{
+      background-color: $contact-primary-ligth;
+
+      img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 50%;
+      }
+    }
+  }
+}

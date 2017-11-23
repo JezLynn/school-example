@@ -1,0 +1,27 @@
+.news{
+  .banner{
+    background: url('../img/banner_news.jpeg') no-repeat;
+    background-size: cover;
+  }
+
+  .topnav{
+    .active{
+      background-color: $news-primary;
+    }
+  }
+
+  .container{
+    background-color: $news-primary;
+
+    .first, .second, .third, .fourth{
+      background-color: $news-primary-ligth;
+
+      img{
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
