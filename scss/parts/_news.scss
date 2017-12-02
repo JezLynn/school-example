@@ -12,16 +12,66 @@
 
   .container{
     background-color: $news-primary;
+    padding-top: 30px;
 
-    .first, .second, .third, .fourth{
-      background-color: $news-primary-ligth;
+    .inner{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      color: $news-primary;
 
-      img{
-        display: block;
-        margin: 0 auto;
-        width: 80%;
-        border-radius: 50%;
+      article{
+        background-color: white;
+        width: 100%;
+        border-radius: 8px;
+        padding-bottom: 4px;
+
+        &.col-2{
+          grid-column: auto / span 2;
+          grid-row: auto;
+        }
+
+        &.row-2{
+          grid-column: auto;
+          grid-row:  auto / span 2;
+        }
+
+        img{
+          width: 100%;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+        }
+
+        h1{
+          margin: 0px 8px;
+        }
+
+        .description{
+          margin: 0px 8px;
+        }
+
+        hr{
+          background-color: white;
+          margin:   40px 0px 5px 0px;
+        }
+
+        i{
+          float: left;
+        }
+
+        i:first-of-type{
+          margin-left: 8px;
+        }
+
+        .comment-count, .likes-count{
+          float: left;
+          margin-left: 5px;
+          margin-right: 15px;
+        }
       }
+
     }
   }
 }
